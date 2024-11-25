@@ -10,6 +10,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: '@gammarers/aws-secure-pipeline-artifact-bucket',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-secure-pipeline-artifact-bucket.git',
+  deps: [
+    '@gammarers/aws-secure-bucket@^2.0.23',
+  ],
+  peerDeps: [
+    '@gammarers/aws-secure-bucket@^2.0.23',
+  ],
   releaseToNpm: false,
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '18.0.0',
