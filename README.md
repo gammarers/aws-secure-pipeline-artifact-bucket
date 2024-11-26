@@ -21,9 +21,9 @@ yarn add @gammarers/aws-secure-pipeline-artifact-bucket
 ## Example
 
 ```typescript
-import { SecurePipelineArtifaceBucket } from '@gammarers/aws-secure-pipeline-artifact-bucket';
+import { SecurePipelineArtifactBucket } from '@gammarers/aws-secure-pipeline-artifact-bucket';
 
-const bucket = new SecurePipelineArtifaceBucket(stack, 'SecurePipelineArtifaceBucket');
+const bucket = new SecurePipelineArtifactBucket(stack, 'SecurePipelineArtifactBucket');
 ```
 
 ## License
