@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SecurePipelineArtifaceBucket default Testing Should match snapshot 1`] = `
+exports[`SecurePipelineArtifactBucket default Testing Should match snapshot 1`] = `
 {
   "Parameters": {
     "BootstrapVersion": {
