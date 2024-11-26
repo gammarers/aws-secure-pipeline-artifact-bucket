@@ -1,5 +1,6 @@
 {
   "name": "@gammarers/aws-secure-pipeline-artifact-bucket",
+  "description": "This S3 bucket is the artifact bucket used for CDK pipelines, created when the --qualifier option is specified during the CDK bootstrap process. If you specify the --qualifier option or explicitly define an artifact bucket for CDK pipelines, you need to configure a policy that allows access to this bucket from the CDK deploy role.",
   "repository": {
     "type": "git",
     "url": "https://github.com/gammarers/aws-secure-pipeline-artifact-bucket.git"
@@ -34,6 +35,7 @@
     "organization": true
   },
   "devDependencies": {
+    "@gammarers/aws-secure-bucket": "2.0.23",
     "@stylistic/eslint-plugin": "^2",
     "@types/jest": "^29.5.14",
     "@types/node": "^18",
@@ -62,11 +64,14 @@
     "aws-cdk-lib": "^2.80.0",
     "constructs": "^10.0.5"
   },
-  "dependencies": {
-    "@gammarers/aws-secure-bucket": "^2.0.23"
-  },
   "keywords": [
-    "cdk"
+    "artifact",
+    "aws",
+    "aws-cdk",
+    "bucket",
+    "cdk",
+    "pipeline",
+    "qualifier"
   ],
   "engines": {
     "node": ">= 18.0.0"
