@@ -35,7 +35,6 @@
     "organization": true
   },
   "devDependencies": {
-    "@gammarers/aws-secure-bucket": "2.0.23",
     "@stylistic/eslint-plugin": "^2",
     "@types/jest": "^29.5.14",
     "@types/node": "^18",
@@ -65,7 +64,7 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@gammarers/aws-secure-bucket": "2.0.23"
+    "@gammarers/aws-secure-bucket": "^2.0.23"
   },
   "keywords": [
     "artifact",

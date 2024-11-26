@@ -1,11 +1,6 @@
 {
   "dependencies": [
     {
-      "name": "@gammarers/aws-secure-bucket",
-      "version": "2.0.23",
-      "type": "build"
-    },
-    {
       "name": "@stylistic/eslint-plugin",
       "version": "^2",
       "type": "build"
@@ -113,7 +108,7 @@
     },
     {
       "name": "@gammarers/aws-secure-bucket",
-      "version": "2.0.23",
+      "version": "^2.0.23",
       "type": "runtime"
     }
   ],
