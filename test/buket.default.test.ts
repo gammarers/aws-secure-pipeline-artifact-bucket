@@ -1,14 +1,14 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { Match, Template } from 'aws-cdk-lib/assertions';
 import * as s3 from 'aws-cdk-lib/aws-s3';
-import { SecurePipelineArtifaceBucket } from '../src';
+import { SecurePipelineArtifactBucket } from '../src';
 
-describe('SecurePipelineArtifaceBucket default Testing', () => {
+describe('SecurePipelineArtifactBucket default Testing', () => {
 
   const stack = new Stack(new App(), 'TestingStack', {
   });
 
-  const bucket = new SecurePipelineArtifaceBucket(stack, 'SecurePipelineArtifaceBucket');
+  const bucket = new SecurePipelineArtifactBucket(stack, 'SecurePipelineArtifaceBucket');
 
   it('Is Bucket', () => {
     expect(bucket).toBeInstanceOf(s3.Bucket);

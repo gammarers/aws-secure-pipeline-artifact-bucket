@@ -4,11 +4,11 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import { Construct } from 'constructs';
 
 
-export interface SecurePipelineArtifaceBucketProps extends SecureBucketProps {}
+export interface SecurePipelineArtifactBucketProps extends SecureBucketProps {}
 
-export class SecurePipelineArtifaceBucket extends SecureBucket {
+export class SecurePipelineArtifactBucket extends SecureBucket {
 
-  constructor(scope: Construct, id: string, props?: SecurePipelineArtifaceBucketProps) {
+  constructor(scope: Construct, id: string, props?: SecurePipelineArtifactBucketProps) {
     super(scope, id, props);
 
     // 👇 Get account & region
