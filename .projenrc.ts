@@ -16,7 +16,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   peerDeps: [
     '@gammarers/aws-secure-bucket@^2.0.23',
   ],
-  releaseToNpm: false,
+  releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '22.4.x',
