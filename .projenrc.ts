@@ -12,9 +12,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'aws-cdk', 'bucket', 'pipeline', 'artifact', 'qualifier'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-secure-pipeline-artifact-bucket.git',
-  //  deps: [
-  //    '@gammarers/aws-secure-bucket@^2.0.23',
-  //  ],
+  deps: [
+    '@gammarers/aws-secure-bucket@2.0.23',
+  ],
+  devDeps: [
+    '@gammarers/aws-secure-bucket@2.0.23',
+  ],
   peerDeps: [
     '@gammarers/aws-secure-bucket@^2.0.23',
   ],
