@@ -1163,6 +1163,7 @@ const securePipelineArtifactBucketProps: SecurePipelineArtifactBucketProps = { .
 | <code><a href="#@gammarers/aws-secure-pipeline-artifact-bucket.SecurePipelineArtifactBucketProps.property.websiteIndexDocument">websiteIndexDocument</a></code> | <code>string</code> | The name of the index document (e.g. "index.html") for the website. Enables static website hosting for this bucket. |
 | <code><a href="#@gammarers/aws-secure-pipeline-artifact-bucket.SecurePipelineArtifactBucketProps.property.websiteRedirect">websiteRedirect</a></code> | <code>aws-cdk-lib.aws_s3.RedirectTarget</code> | Specifies the redirect behavior of all requests to a website endpoint of a bucket. |
 | <code><a href="#@gammarers/aws-secure-pipeline-artifact-bucket.SecurePipelineArtifactBucketProps.property.websiteRoutingRules">websiteRoutingRules</a></code> | <code>aws-cdk-lib.aws_s3.RoutingRule[]</code> | Rules that define when a redirect is applied and the redirect behavior. |
+| <code><a href="#@gammarers/aws-secure-pipeline-artifact-bucket.SecurePipelineArtifactBucketProps.property.isPipelineArtifactBucket">isPipelineArtifactBucket</a></code> | <code>boolean</code> | If you are setting a custom Qualifier and using it as the artifact bucket for the CDK pipeline, set it to true. |
 
 ---
 
@@ -1581,6 +1582,19 @@ public readonly websiteRoutingRules: RoutingRule[];
 - *Default:* No redirection rules.
 
 Rules that define when a redirect is applied and the redirect behavior.
+
+---
+
+##### `isPipelineArtifactBucket`<sup>Optional</sup> <a name="isPipelineArtifactBucket" id="@gammarers/aws-secure-pipeline-artifact-bucket.SecurePipelineArtifactBucketProps.property.isPipelineArtifactBucket"></a>
+
+```typescript
+public readonly isPipelineArtifactBucket: boolean;
+```
+
+- *Type:* boolean
+- *Default:* false
+
+If you are setting a custom Qualifier and using it as the artifact bucket for the CDK pipeline, set it to true.
 
 ---
 
